@@ -41,9 +41,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.listBox = new System.Windows.Forms.ListBox();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnReset = new System.Windows.Forms.Button();
-            this.listBox = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.labCola = new System.Windows.Forms.Label();
             this.labTea = new System.Windows.Forms.Label();
@@ -184,9 +184,21 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "購物清單List";
             // 
+            // listBox
+            // 
+            this.listBox.Font = new System.Drawing.Font("新細明體", 16F);
+            this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 21;
+            this.listBox.Items.AddRange(new object[] {
+            "尚未點餐"});
+            this.listBox.Location = new System.Drawing.Point(3, 33);
+            this.listBox.Name = "listBox";
+            this.listBox.Size = new System.Drawing.Size(356, 298);
+            this.listBox.TabIndex = 9;
+            // 
             // flowLayoutPanel7
             // 
-            this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 127);
+            this.flowLayoutPanel7.Location = new System.Drawing.Point(3, 337);
             this.flowLayoutPanel7.Name = "flowLayoutPanel7";
             this.flowLayoutPanel7.Size = new System.Drawing.Size(230, 33);
             this.flowLayoutPanel7.TabIndex = 7;
@@ -194,24 +206,13 @@
             // btnReset
             // 
             this.btnReset.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btnReset.Location = new System.Drawing.Point(239, 127);
+            this.btnReset.Location = new System.Drawing.Point(239, 337);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(117, 33);
             this.btnReset.TabIndex = 8;
             this.btnReset.Text = "清除清單";
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // listBox
-            // 
-            this.listBox.FormattingEnabled = true;
-            this.listBox.ItemHeight = 12;
-            this.listBox.Items.AddRange(new object[] {
-            "尚未點餐"});
-            this.listBox.Location = new System.Drawing.Point(3, 33);
-            this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(356, 88);
-            this.listBox.TabIndex = 9;
             // 
             // panel1
             // 
