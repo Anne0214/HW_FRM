@@ -1,0 +1,11 @@
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.csproj.AssemblyReference.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.frm_score.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.Properties.Resources.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.csproj.GenerateResource.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.csproj.CoreCompileInputs.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\bin\Debug\frm_score.exe.config
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\bin\Debug\frm_score.exe
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\bin\Debug\frm_score.pdb
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.exe
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_score\obj\Debug\frm_score.pdb

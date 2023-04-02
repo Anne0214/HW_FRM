@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace frm_score
 {
-    internal class Student
+    public class Student
     { public struct StudentInfo
         {
             public string Name;

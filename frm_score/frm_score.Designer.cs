@@ -48,9 +48,10 @@
             // btnSave
             // 
             this.btnSave.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btnSave.Location = new System.Drawing.Point(41, 361);
+            this.btnSave.Location = new System.Drawing.Point(62, 542);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(105, 35);
+            this.btnSave.Size = new System.Drawing.Size(158, 52);
             this.btnSave.TabIndex = 0;
             this.btnSave.Text = "儲存";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -60,27 +61,30 @@
             // 
             this.labName.AutoSize = true;
             this.labName.Font = new System.Drawing.Font("新細明體", 16F);
-            this.labName.Location = new System.Drawing.Point(66, 87);
+            this.labName.Location = new System.Drawing.Point(99, 130);
+            this.labName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labName.Name = "labName";
-            this.labName.Size = new System.Drawing.Size(60, 22);
+            this.labName.Size = new System.Drawing.Size(86, 32);
             this.labName.TabIndex = 1;
             this.labName.Text = "姓名:";
             // 
             // txtName
             // 
             this.txtName.Font = new System.Drawing.Font("新細明體", 16F);
-            this.txtName.Location = new System.Drawing.Point(153, 76);
+            this.txtName.Location = new System.Drawing.Point(230, 114);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(150, 33);
+            this.txtName.Size = new System.Drawing.Size(223, 46);
             this.txtName.TabIndex = 2;
             this.txtName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtChi
             // 
             this.txtChi.Font = new System.Drawing.Font("新細明體", 16F);
-            this.txtChi.Location = new System.Drawing.Point(153, 142);
+            this.txtChi.Location = new System.Drawing.Point(230, 213);
+            this.txtChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtChi.Name = "txtChi";
-            this.txtChi.Size = new System.Drawing.Size(150, 33);
+            this.txtChi.Size = new System.Drawing.Size(223, 46);
             this.txtChi.TabIndex = 5;
             this.txtChi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -88,18 +92,20 @@
             // 
             this.labChi.AutoSize = true;
             this.labChi.Font = new System.Drawing.Font("新細明體", 16F);
-            this.labChi.Location = new System.Drawing.Point(66, 153);
+            this.labChi.Location = new System.Drawing.Point(99, 230);
+            this.labChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labChi.Name = "labChi";
-            this.labChi.Size = new System.Drawing.Size(60, 22);
+            this.labChi.Size = new System.Drawing.Size(86, 32);
             this.labChi.TabIndex = 4;
             this.labChi.Text = "國文:";
             // 
             // txtMath
             // 
             this.txtMath.Font = new System.Drawing.Font("新細明體", 16F);
-            this.txtMath.Location = new System.Drawing.Point(153, 271);
+            this.txtMath.Location = new System.Drawing.Point(230, 406);
+            this.txtMath.Margin = new System.Windows.Forms.Padding(4);
             this.txtMath.Name = "txtMath";
-            this.txtMath.Size = new System.Drawing.Size(150, 33);
+            this.txtMath.Size = new System.Drawing.Size(223, 46);
             this.txtMath.TabIndex = 9;
             this.txtMath.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -107,18 +113,20 @@
             // 
             this.labMath.AutoSize = true;
             this.labMath.Font = new System.Drawing.Font("新細明體", 16F);
-            this.labMath.Location = new System.Drawing.Point(66, 282);
+            this.labMath.Location = new System.Drawing.Point(99, 423);
+            this.labMath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labMath.Name = "labMath";
-            this.labMath.Size = new System.Drawing.Size(60, 22);
+            this.labMath.Size = new System.Drawing.Size(86, 32);
             this.labMath.TabIndex = 8;
             this.labMath.Text = "數學:";
             // 
             // txtEng
             // 
             this.txtEng.Font = new System.Drawing.Font("新細明體", 16F);
-            this.txtEng.Location = new System.Drawing.Point(153, 205);
+            this.txtEng.Location = new System.Drawing.Point(230, 308);
+            this.txtEng.Margin = new System.Windows.Forms.Padding(4);
             this.txtEng.Name = "txtEng";
-            this.txtEng.Size = new System.Drawing.Size(150, 33);
+            this.txtEng.Size = new System.Drawing.Size(223, 46);
             this.txtEng.TabIndex = 7;
             this.txtEng.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -126,30 +134,35 @@
             // 
             this.labEng.AutoSize = true;
             this.labEng.Font = new System.Drawing.Font("新細明體", 16F);
-            this.labEng.Location = new System.Drawing.Point(66, 216);
+            this.labEng.Location = new System.Drawing.Point(99, 324);
+            this.labEng.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labEng.Name = "labEng";
-            this.labEng.Size = new System.Drawing.Size(60, 22);
+            this.labEng.Size = new System.Drawing.Size(86, 32);
             this.labEng.TabIndex = 6;
             this.labEng.Text = "英文:";
             // 
             // btnDisplay
             // 
             this.btnDisplay.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btnDisplay.Location = new System.Drawing.Point(164, 361);
+            this.btnDisplay.Location = new System.Drawing.Point(246, 542);
+            this.btnDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.btnDisplay.Name = "btnDisplay";
-            this.btnDisplay.Size = new System.Drawing.Size(162, 35);
+            this.btnDisplay.Size = new System.Drawing.Size(243, 52);
             this.btnDisplay.TabIndex = 10;
             this.btnDisplay.Text = "顯示儲存內容";
             this.btnDisplay.UseVisualStyleBackColor = true;
+            this.btnDisplay.Click += new System.EventHandler(this.btnDisplay_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.txtSpecial);
             this.groupBox1.Controls.Add(this.txtDisplay);
             this.groupBox1.Font = new System.Drawing.Font("新細明體", 16F);
-            this.groupBox1.Location = new System.Drawing.Point(355, 51);
+            this.groupBox1.Location = new System.Drawing.Point(532, 76);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(328, 305);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(492, 458);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "成績";
@@ -157,36 +170,40 @@
             // txtSpecial
             // 
             this.txtSpecial.Font = new System.Drawing.Font("新細明體", 12F);
-            this.txtSpecial.Location = new System.Drawing.Point(6, 220);
+            this.txtSpecial.Location = new System.Drawing.Point(9, 330);
+            this.txtSpecial.Margin = new System.Windows.Forms.Padding(4);
             this.txtSpecial.Multiline = true;
             this.txtSpecial.Name = "txtSpecial";
-            this.txtSpecial.Size = new System.Drawing.Size(316, 79);
+            this.txtSpecial.Size = new System.Drawing.Size(472, 116);
             this.txtSpecial.TabIndex = 1;
             // 
             // txtDisplay
             // 
             this.txtDisplay.Font = new System.Drawing.Font("新細明體", 12F);
-            this.txtDisplay.Location = new System.Drawing.Point(6, 36);
+            this.txtDisplay.Location = new System.Drawing.Point(9, 54);
+            this.txtDisplay.Margin = new System.Windows.Forms.Padding(4);
             this.txtDisplay.Multiline = true;
             this.txtDisplay.Name = "txtDisplay";
-            this.txtDisplay.Size = new System.Drawing.Size(316, 179);
+            this.txtDisplay.Size = new System.Drawing.Size(472, 266);
             this.txtDisplay.TabIndex = 0;
             // 
             // btnSpecial
             // 
             this.btnSpecial.Font = new System.Drawing.Font("新細明體", 16F);
-            this.btnSpecial.Location = new System.Drawing.Point(465, 374);
+            this.btnSpecial.Location = new System.Drawing.Point(698, 561);
+            this.btnSpecial.Margin = new System.Windows.Forms.Padding(4);
             this.btnSpecial.Name = "btnSpecial";
-            this.btnSpecial.Size = new System.Drawing.Size(218, 35);
+            this.btnSpecial.Size = new System.Drawing.Size(327, 52);
             this.btnSpecial.TabIndex = 12;
             this.btnSpecial.Text = "最高分/最低分科目";
             this.btnSpecial.UseVisualStyleBackColor = true;
+            this.btnSpecial.Click += new System.EventHandler(this.btnSpecial_Click);
             // 
             // frm_score
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 675);
             this.Controls.Add(this.btnSpecial);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnDisplay);
@@ -199,6 +216,7 @@
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.labName);
             this.Controls.Add(this.btnSave);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_score";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);

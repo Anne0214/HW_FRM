@@ -10,3 +10,15 @@ C:\Users\User\HW_CSharp\HW_frm\frm_loan\obj\Debug\frm_loan.csproj.CoreCompileInp
 C:\Users\User\HW_CSharp\HW_frm\frm_loan\obj\Debug\frm_loan.exe
 C:\Users\User\HW_CSharp\HW_frm\frm_loan\obj\Debug\frm_loan.pdb
 C:\Users\User\HW_CSharp\HW_frm\frm_loan\obj\Debug\frm_loan.loan_report.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\bin\Debug\frm_loan.exe.config
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\bin\Debug\frm_loan.exe
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\bin\Debug\frm_loan.pdb
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.csproj.AssemblyReference.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.Loan.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.loan_report.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.Properties.Resources.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.csproj.GenerateResource.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.csproj.CoreCompileInputs.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.exe
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_loan\obj\Debug\frm_loan.pdb
