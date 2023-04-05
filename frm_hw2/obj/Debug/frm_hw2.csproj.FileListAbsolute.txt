@@ -3,8 +3,15 @@ C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\bin\Debug\frm_hw2.exe
 C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\bin\Debug\frm_hw2.pdb
 C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.csproj.AssemblyReference.cache
 C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_StudentGrade.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.csproj.GenerateResource.cache
 C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.csproj.CoreCompileInputs.cache
 C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.exe
 C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.pdb
-C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_score2.resources
-C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.csproj.GenerateResource.cache
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_StudentGradeList.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_Method.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_MyCalc.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_ForDoWhile.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_XOGame.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_ScreenSaver.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.Properties.Resources.resources
