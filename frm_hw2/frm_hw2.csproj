@@ -45,11 +45,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_DrawPaint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DrawPaint.Designer.cs">
+      <DependentUpon>frm_DrawPaint.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_ForDoWhile.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_ForDoWhile.Designer.cs">
       <DependentUpon>frm_ForDoWhile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Guess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Guess.Designer.cs">
+      <DependentUpon>frm_Guess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Guess_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Guess_Input.Designer.cs">
+      <DependentUpon>frm_Guess_Input.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_Method.cs">
       <SubType>Form</SubType>
@@ -62,6 +80,18 @@
     </Compile>
     <Compile Include="frm_MyCalc.Designer.cs">
       <DependentUpon>frm_MyCalc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Notepad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Notepad.Designer.cs">
+      <DependentUpon>frm_Notepad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PictureViewer.Designer.cs">
+      <DependentUpon>frm_PictureViewer.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ScreenSaver.cs">
       <SubType>Form</SubType>
@@ -100,14 +130,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_DrawPaint.resx">
+      <DependentUpon>frm_DrawPaint.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_ForDoWhile.resx">
       <DependentUpon>frm_ForDoWhile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Guess.resx">
+      <DependentUpon>frm_Guess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Guess_Input.resx">
+      <DependentUpon>frm_Guess_Input.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_Method.resx">
       <DependentUpon>frm_Method.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MyCalc.resx">
       <DependentUpon>frm_MyCalc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Notepad.resx">
+      <DependentUpon>frm_Notepad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PictureViewer.resx">
+      <DependentUpon>frm_PictureViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ScreenSaver.resx">
       <DependentUpon>frm_ScreenSaver.cs</DependentUpon>
