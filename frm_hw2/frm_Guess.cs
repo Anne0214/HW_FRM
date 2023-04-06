@@ -33,6 +33,9 @@ namespace frm_hw2
         private void btnAnswer_Click(object sender, EventArgs e)
         {
             MessageBox.Show("答案是:" +  GuessGame.answer);
+            game.NewGame();
+            labInstruction.Text = GuessGame.instruction;
+          
         }
     }
 }

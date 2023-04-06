@@ -40,7 +40,7 @@
             this.labInstruction.Name = "labInstruction";
             this.labInstruction.Size = new System.Drawing.Size(198, 12);
             this.labInstruction.TabIndex = 0;
-            this.labInstruction.Text = GuessGame.instruction;
+            this.labInstruction.Text = "來猜數字ㄅ"; //todo 要怎麼寫捏
             // 
             // btnStart
             // 
@@ -79,7 +79,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labInstruction;
+        public System.Windows.Forms.Label labInstruction;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Button btnAnswer;
     }
