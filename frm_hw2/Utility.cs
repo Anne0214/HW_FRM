@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace frm_hw2
 {
@@ -17,42 +18,49 @@ namespace frm_hw2
             public int scoreEng;
             
         }
-    public struct GuessGame
+    static public  class GuessGame
     {
         
         static public int answer { get; set; }
         static public int max { get; set; }
-        static public int min { get; set; }
-        static public string instruction { get; set; }
+        static public int min { get; set ; } //todo 可以嘗試看看改set的寫法
+
         
 
-        public void NewGame()
+        static public void  NewGame()
         {
-            Random rd= new Random();
-            answer = rd.Next(1,100);
+            Random rd = new Random();
+            int value = rd.Next(1,100);
+            answer = value;
             max = 100;
             min = 1;
-            instruction= "來玩猜數字! 答案是1~100之間的數字"; 
+            
 
         }
-        public void Result(int input) {
-            //todo其實只要結果有string就好，但我想寫寫看out。應該有更好的寫法，再看看
+        static public string Result(int input,out bool victory) {
+           
 
             
             if (input == answer)
             {
-                
-                instruction = "答對了! 答案就是" + answer;
+                victory = true;
+                int value = answer;
+                NewGame();
+                return "答對了! 答案就是" + value;
             }
             else if (input < answer)
             {
-                instruction = "太小了! 答案在" + input + "-"+max+"之間";
                 min = input;
+                victory = false;
+                return "太小了! 答案在" + input + "-"+max+"之間";
+                
             }
             else
             {
-                instruction = "太大了! 答案在" + min + "-" +input+"之間";
                 max = input;
+                victory = false;
+                return  "太大了! 答案在" + min + "-" +input+"之間";
+                
             }
 
             

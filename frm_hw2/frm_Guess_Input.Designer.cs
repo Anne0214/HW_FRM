@@ -36,9 +36,10 @@
             // 
             // btnInput
             // 
-            this.btnInput.Location = new System.Drawing.Point(299, 73);
+            this.btnInput.Font = new System.Drawing.Font("新細明體", 12F);
+            this.btnInput.Location = new System.Drawing.Point(245, 37);
             this.btnInput.Name = "btnInput";
-            this.btnInput.Size = new System.Drawing.Size(75, 23);
+            this.btnInput.Size = new System.Drawing.Size(114, 27);
             this.btnInput.TabIndex = 0;
             this.btnInput.Text = "就決定是這個惹";
             this.btnInput.UseVisualStyleBackColor = true;
@@ -46,9 +47,10 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(299, 107);
+            this.btnCancel.Font = new System.Drawing.Font("新細明體", 12F);
+            this.btnCancel.Location = new System.Drawing.Point(245, 81);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.Size = new System.Drawing.Size(114, 28);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.Text = "修但幾勒";
             this.btnCancel.UseVisualStyleBackColor = true;
@@ -56,17 +58,19 @@
             // 
             // txtInput
             // 
-            this.txtInput.Location = new System.Drawing.Point(77, 109);
+            this.txtInput.Font = new System.Drawing.Font("新細明體", 12F);
+            this.txtInput.Location = new System.Drawing.Point(24, 68);
             this.txtInput.Name = "txtInput";
-            this.txtInput.Size = new System.Drawing.Size(100, 22);
+            this.txtInput.Size = new System.Drawing.Size(100, 27);
             this.txtInput.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(75, 73);
+            this.label1.Font = new System.Drawing.Font("新細明體", 12F);
+            this.label1.Location = new System.Drawing.Point(21, 37);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 12);
+            this.label1.Size = new System.Drawing.Size(183, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "在下面輸入你猜測的數字";
             // 
@@ -74,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(406, 137);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtInput);
             this.Controls.Add(this.btnCancel);

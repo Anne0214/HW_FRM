@@ -7,17 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace frm_hw2
 {
     public partial class frm_Guess_Input : Form
     {
-        public frm_Guess_Input()
+        public frm_Guess_Input(frm_Guess Parentform) //設父frm
         {
             InitializeComponent();
+            this.Tag = Parentform; //todo待了解意思
         }
 
-        GuessGame game2= new GuessGame();
+        
+        
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -28,13 +31,24 @@ namespace frm_hw2
             int input;
             
             bool isNum = int.TryParse(txtInput.Text, out input);
-            if (isNum==false || input>100 || input<1)
+            if (isNum==false || input>=GuessGame.max || input<=GuessGame.min)
             {
-                MessageBox.Show("請輸入1~100的數字");
+                MessageBox.Show($"請輸入{GuessGame.min}~{GuessGame.max}的數字"); //todo 這邊要隨當前範圍要改變
             }
             else
             {
-                game2.Result(input);
+                bool victory;
+                string result= GuessGame.Result(input,out victory);
+                if (victory == true)
+                {
+                    MessageBox.Show(result);
+                    ((frm_Guess)this.Tag).setLabText = "已經重新出數字，輸入1~100的數字開始新遊戲";
+                    txtInput.Text = "";
+                }
+                else { ((frm_Guess)this.Tag).setLabText = result; }
+                
+                
+                
                 
           
             }

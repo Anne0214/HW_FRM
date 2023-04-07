@@ -36,17 +36,19 @@
             // labInstruction
             // 
             this.labInstruction.AutoSize = true;
-            this.labInstruction.Location = new System.Drawing.Point(68, 85);
+            this.labInstruction.Font = new System.Drawing.Font("新細明體", 12F);
+            this.labInstruction.Location = new System.Drawing.Point(34, 42);
             this.labInstruction.Name = "labInstruction";
-            this.labInstruction.Size = new System.Drawing.Size(198, 12);
+            this.labInstruction.Size = new System.Drawing.Size(87, 16);
             this.labInstruction.TabIndex = 0;
-            this.labInstruction.Text = "來猜數字ㄅ"; //todo 要怎麼寫捏
+            this.labInstruction.Text = "來猜數字ㄅ";
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(70, 146);
+            this.btnStart.Font = new System.Drawing.Font("新細明體", 12F);
+            this.btnStart.Location = new System.Drawing.Point(36, 90);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(102, 39);
             this.btnStart.TabIndex = 1;
             this.btnStart.Text = "接受挑戰";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -54,9 +56,10 @@
             // 
             // btnAnswer
             // 
-            this.btnAnswer.Location = new System.Drawing.Point(205, 146);
+            this.btnAnswer.Font = new System.Drawing.Font("新細明體", 12F);
+            this.btnAnswer.Location = new System.Drawing.Point(181, 90);
             this.btnAnswer.Name = "btnAnswer";
-            this.btnAnswer.Size = new System.Drawing.Size(96, 23);
+            this.btnAnswer.Size = new System.Drawing.Size(113, 39);
             this.btnAnswer.TabIndex = 2;
             this.btnAnswer.Text = "我菜，看答案";
             this.btnAnswer.UseVisualStyleBackColor = true;
@@ -66,7 +69,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(329, 141);
             this.Controls.Add(this.btnAnswer);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.labInstruction);
