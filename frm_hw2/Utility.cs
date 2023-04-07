@@ -18,16 +18,16 @@ namespace frm_hw2
             public int scoreEng;
             
         }
-    static public  class GuessGame
+    static public  class GuessGame //靜態類別，這樣才能讓frm_Guess兩個視窗去共同取用
     {
-        
+        //靜態類別下的成員都是靜態的
         static public int answer { get; set; }
         static public int max { get; set; }
         static public int min { get; set ; } //todo 可以嘗試看看改set的寫法
 
         
 
-        static public void  NewGame()
+        static public void  NewGame() //遊戲開始或重開時會叫的方法
         {
             Random rd = new Random();
             int value = rd.Next(1,100);
@@ -37,7 +37,7 @@ namespace frm_hw2
             
 
         }
-        static public string Result(int input,out bool victory) {
+        static public string Result(int input,out bool victory) { //判斷獲勝與否的方法。input是作答內容，victory是用來判斷的指標。這邊也可以string在子視窗做處理
            
 
             

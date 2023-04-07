@@ -13,7 +13,7 @@ namespace frm_hw2
 {
     public partial class frm_Guess_Input : Form
     {
-        public frm_Guess_Input(frm_Guess Parentform) //設父frm
+        public frm_Guess_Input(frm_Guess Parentform) //todo有參數是父視窗
         {
             InitializeComponent();
             this.Tag = Parentform; //todo待了解意思

@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_Alarm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Alarm.Designer.cs">
+      <DependentUpon>frm_Alarm.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_DrawPaint.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frm_Alarm.resx">
+      <DependentUpon>frm_Alarm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_DrawPaint.resx">
       <DependentUpon>frm_DrawPaint.cs</DependentUpon>
     </EmbeddedResource>
