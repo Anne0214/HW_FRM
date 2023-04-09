@@ -75,6 +75,12 @@
     <Compile Include="frm_Guess_Input.Designer.cs">
       <DependentUpon>frm_Guess_Input.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_Hello.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Hello.Designer.cs">
+      <DependentUpon>frm_Hello.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Method.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,12 @@
     </Compile>
     <Compile Include="frm_PictureViewer.Designer.cs">
       <DependentUpon>frm_PictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PictureViewer2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PictureViewer2.Designer.cs">
+      <DependentUpon>frm_PictureViewer2.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_ScreenSaver.cs">
       <SubType>Form</SubType>
@@ -151,6 +163,9 @@
     <EmbeddedResource Include="frm_Guess_Input.resx">
       <DependentUpon>frm_Guess_Input.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_Hello.resx">
+      <DependentUpon>frm_Hello.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Method.resx">
       <DependentUpon>frm_Method.cs</DependentUpon>
     </EmbeddedResource>
@@ -162,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_PictureViewer.resx">
       <DependentUpon>frm_PictureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PictureViewer2.resx">
+      <DependentUpon>frm_PictureViewer2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_ScreenSaver.resx">
       <DependentUpon>frm_ScreenSaver.cs</DependentUpon>
@@ -182,6 +200,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1595002569-c4ca4238a0b9238.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_18.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_181.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_10.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_09.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_08.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_07.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_06.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_05.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parrot_04.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,3 +37,11 @@ C:\Users\User\HW_CSharp\HW_frm\frm_hw2\obj\Debug\frm_hw2.frm_DrawPaint.resources
 C:\Users\User\HW_CSharp\HW_frm\frm_hw2\obj\Debug\frm_hw2.frm_Guess.resources
 C:\Users\User\HW_CSharp\HW_frm\frm_hw2\obj\Debug\frm_hw2.frm_Guess_Input.resources
 C:\Users\User\HW_CSharp\HW_frm\frm_hw2\obj\Debug\frm_hw2.frm_PictureViewer.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_Alarm.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_DrawPaint.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_Guess.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_Guess_Input.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_Notepad.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_PictureViewer.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_Hello.resources
+C:\Users\Anne\Documents\GitHub\HW_FRM\frm_hw2\obj\Debug\frm_hw2.frm_PictureViewer2.resources

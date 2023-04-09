@@ -9,12 +9,51 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace frm_hw2
-{ //todo 不確定這個需求具體是甚麼，先放著
+{ 
     public partial class frm_PictureViewer : Form
     {
         public frm_PictureViewer()
         {
             InitializeComponent();
         }
+
+        void ShowDetail(System.Windows.Forms.PictureBox box)
+        {
+            frm_PictureViewer2 frm2 = new frm_PictureViewer2((System.Drawing.Bitmap)box.Image);
+            frm2.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox1);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox2);
+        }
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox3);
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox4);
+        }
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox5);
+        }
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox6);
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            ShowDetail(pictureBox7);
+        }
+
     }
 }

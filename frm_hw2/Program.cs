@@ -17,7 +17,7 @@ namespace frm_hw2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Guess());
+            Application.Run(new frm_PictureViewer());
         }
     }
 }

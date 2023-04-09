@@ -1,4 +1,6 @@
-﻿namespace frm_hw2
+﻿using System;
+
+namespace frm_hw2
 {
     partial class frm_PictureViewer
     {
@@ -59,85 +61,107 @@
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(803, 453);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1204, 680);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(10, 20);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::frm_hw2.Properties.Resources.parrot_16;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 30);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(150, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(130, 20);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::frm_hw2.Properties.Resources.parrot_18;
+            this.pictureBox2.Location = new System.Drawing.Point(195, 30);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(150, 75);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
+            pictureBox2.Click += new EventHandler(pictureBox2_Click);
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(250, 20);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox3.Image = global::frm_hw2.Properties.Resources.parrot_17;
+            this.pictureBox3.Location = new System.Drawing.Point(375, 30);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(150, 75);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
+            pictureBox3.Click+= new EventHandler(pictureBox3_Click);
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(370, 20);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox4.Image = global::frm_hw2.Properties.Resources.parrot_15;
+            this.pictureBox4.Location = new System.Drawing.Point(555, 30);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox4.Size = new System.Drawing.Size(150, 75);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
+            pictureBox4.Click +=new EventHandler(pictureBox4_Click);
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(490, 20);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox5.Image = global::frm_hw2.Properties.Resources.parrot_14;
+            this.pictureBox5.Location = new System.Drawing.Point(735, 30);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox5.Size = new System.Drawing.Size(150, 75);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            pictureBox5.Click += new EventHandler(pictureBox5_Click);
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Location = new System.Drawing.Point(610, 20);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox6.Image = global::frm_hw2.Properties.Resources.parrot_13;
+            this.pictureBox6.Location = new System.Drawing.Point(915, 30);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox6.Size = new System.Drawing.Size(150, 75);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
+            pictureBox6.Click += new EventHandler(pictureBox6_Click);
             // 
             // pictureBox7
             // 
-            this.pictureBox7.Location = new System.Drawing.Point(10, 110);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(10, 20, 10, 20);
+            this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox7.Image = global::frm_hw2.Properties.Resources.parrot_12;
+            this.pictureBox7.Location = new System.Drawing.Point(15, 165);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(15, 30, 15, 30);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox7.Size = new System.Drawing.Size(150, 75);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
+            pictureBox7.Click += new EventHandler(pictureBox7_Click);
             // 
             // frm_PictureViewer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1200, 675);
             this.Controls.Add(this.flowLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_PictureViewer";
             this.Text = "frm_PictureViewer";
             this.flowLayoutPanel1.ResumeLayout(false);

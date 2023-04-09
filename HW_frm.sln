@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frm_score", "frm_score\frm_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "frm_hw2", "frm_hw2\frm_hw2.csproj", "{0775BD85-88F6-4B77-9E73-302E369004F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HW_FRM", "HW_FRM\HW_FRM.csproj", "{3F9FDC76-F542-48C9-8C1C-2C6E083CFAFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{0775BD85-88F6-4B77-9E73-302E369004F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0775BD85-88F6-4B77-9E73-302E369004F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0775BD85-88F6-4B77-9E73-302E369004F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9FDC76-F542-48C9-8C1C-2C6E083CFAFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9FDC76-F542-48C9-8C1C-2C6E083CFAFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9FDC76-F542-48C9-8C1C-2C6E083CFAFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9FDC76-F542-48C9-8C1C-2C6E083CFAFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
