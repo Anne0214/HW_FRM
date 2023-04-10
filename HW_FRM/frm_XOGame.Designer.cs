@@ -86,10 +86,11 @@
             this.btn1.TabIndex = 3;
             this.btn1.UseVisualStyleBackColor = false;
             this.btn1.Click += new System.EventHandler(this.btn1_Click);
+
             // 
             // button4
             // 
-            
+
             // 
             // btn2
             // 

@@ -105,10 +105,10 @@ namespace HW_FRM
 
         }
 
-        private void btn1_Click(object sender, EventArgs e)
+        private void btn1_Click(object sender, EventArgs e) //改寫看看，看能不能用一個event解決
         {
             
-            Step(btn1);
+            Step(btn2);
         }
 
         private void btn2_Click(object sender, EventArgs e)
