@@ -21,11 +21,11 @@ namespace HW_FRM
         {
             InitializeComponent();
         }
-      List<Student> grades= new List<Student>();
-        
+      List<Student> grades= new List<Student>();//用來記錄學生成績
 
-    public void newRow(string Name,int Chi, int Eng, int Math,List<Student> grades)
-        {
+
+        public void newRow(string Name, int Chi, int Eng, int Math, List<Student> grades)
+        { //此方法為要加入成績時使用
             Student student = new Student();
             student.Name = Name;
             student.scoreChi = Chi;
@@ -56,7 +56,7 @@ namespace HW_FRM
             string minSubject = dict.Aggregate((x, y) => x.Value < y.Value ? x : y).Key;
             int minScore = dict[minSubject];
 
-
+            //放入listview
             ListViewItem item0 = new ListViewItem();
             item0.SubItems[0].Text = student.Name;
             item0.SubItems.Add(student.scoreChi.ToString());
@@ -68,101 +68,127 @@ namespace HW_FRM
             item0.SubItems.Add(maxSubject+ maxScore);
             listAll.Items.Add(item0);
         }
-        
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
-            if (txtName.Text == "")
-            {
-                MessageBox.Show("請輸入名字噢");
-            }
-            else
+            try
             {
                 string name = txtName.Text;
-                if (txtChi.Text=="") {
-                    MessageBox.Show("請輸入國文成績噢");
-                } else {
-                    int chi = int.Parse(txtChi.Text);
-                    if (txtEng.Text =="")
+                int chi,math,eng;
+                bool is_int_chi = int.TryParse(txtChi.Text, out chi);
+                bool is_int_math = int.TryParse(txtMath.Text, out math);
+                bool is_int_eng = int.TryParse(txtEng.Text, out eng);
+
+                if (name == "")
+                {
+                    MessageBox.Show("請輸入學生名稱喔(ノ▼Д▼)ノ");
+                }
+                else
+                {
+                    if (is_int_chi == false)
                     {
-                        MessageBox.Show("請輸入英文成績噢");
+                        MessageBox.Show("請輸入正確的國文成績(ノ▼Д▼)ノ");
                     }
                     else
                     {
-                        int eng = int.Parse(txtEng.Text);
-                        if (txtMath.Text=="")
+                        if (is_int_eng == false)
                         {
-                            MessageBox.Show("請輸入數學成績噢");
+                            MessageBox.Show("請輸入正確的英文成績(ノ▼Д▼)ノ");
                         }
                         else
                         {
-                            int math = int.Parse(txtMath.Text);
-                            newRow(name, chi, eng, math,grades);
-                            if (grades.Count > 0)
+                            if (is_int_math == false)
                             {
-                                btnSummary.Enabled = !btnSummary.Enabled;
-                            } //todo應該有只放一個地方的方法QQ
+                                MessageBox.Show("請輸入正確的數學成績(ノ▼Д▼)ノ");
+                            }
+                            else
+                            {
+                                newRow(name, chi, eng, math, grades);
+                                if (grades.Count > 0)
+                                {
+                                    btnSummary.Enabled = !btnSummary.Enabled;
+                                }
+                            }
                         }
                     }
+
+                }
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("發生不明錯誤，請稍後再試");
+
+            }
+        }
+        private void btnRandom_Click(object sender, EventArgs e)
+        { //點擊隨機，產生隨機資料新增進去
+
+            try
+            {
+                Random random = new Random();
+                int chi = random.Next(0, 100);
+                int eng = random.Next(0, 100);
+                int math = random.Next(0, 100);
+                int name_int = grades.Count() + 1; //該筆隨機資料為第N筆，則名字為N
+                string name = name_int.ToString();
+                newRow(name, chi, eng, math, grades);
+                if (grades.Count > 0)
+                {
+                    btnSummary.Enabled = !btnSummary.Enabled;
                 }
             }
-            
-            
-            
-            
-            
-
-
-        }
-
-        private void btnRandom_Click(object sender, EventArgs e)
-        {
-            Random random = new Random();
-            int chi= random.Next(0, 100);  
-            int eng= random.Next(0, 100);
-            int math= random.Next(0, 100);
-            int name_int = grades.Count()+1;
-            string name = name_int.ToString();
-            newRow(name, chi, eng, math
-                , grades);
-            if (grades.Count > 0)
+            catch (Exception)
             {
-                btnSummary.Enabled = !btnSummary.Enabled;
-            } //todo應該有只放一個地方的方法QQ
+                MessageBox.Show("發生不明錯誤，請稍後再試");
+
+            }
 
         }
 
         private void btnRadeom20_Click(object sender, EventArgs e)
         {
-            Random random = new Random(); //不知道為甚麼，但要放在外面
-            for (int i=0;i<20;i++) {
-                
-                int chi = random.Next(0, 100);
-                int eng = random.Next(0, 100);
-                int math = random.Next(0, 100);
-                int name_int = grades.Count() + 1;
-                string name = name_int.ToString();
-                newRow(name, chi, eng, math,grades);
-            }
-            if (grades.Count > 0)
+            try
             {
-                btnSummary.Enabled = !btnSummary.Enabled;
-            } //todo應該有只放一個地方的方法QQ
+                Random random = new Random();
+                for (int i = 0; i < 20; i++)
+                {
 
+                    int chi = random.Next(0, 100);
+                    int eng = random.Next(0, 100);
+                    int math = random.Next(0, 100);
+                    int name_int = grades.Count() + 1;
+                    string name = name_int.ToString();
+                    newRow(name, chi, eng, math, grades);
+                }
+                if (grades.Count > 0)
+                {
+                    btnSummary.Enabled = !btnSummary.Enabled;
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("發生不明錯誤，請稍後再試");
+
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
-        {
+        { //清空兩個listview，跟背後儲存資料的grade
             listAll.Items.Clear();
-            listAll.Refresh();
             grades.Clear();
-
             listSummary.Items.Clear();
-            listSummary.Refresh();
+
             btnSummary.Enabled = !btnSummary.Enabled;
             btnAdd.Enabled = !btnAdd.Enabled;
             btnRadeom20.Enabled = !btnRadeom20.Enabled;
             btnRandom.Enabled = !btnRandom.Enabled;
+
+            //方便用戶接著輸入資料，清空輸入框
+            txtChi.Text = "";
+            txtMath.Text = "";
+            txtEng.Text = "";
+            txtName.Text = "";
         }
 
         private void btnSummary_Click(object sender, EventArgs e)
@@ -213,12 +239,12 @@ namespace HW_FRM
             item2.SubItems.Add(avgEng.ToString());
             item2.SubItems.Add(avgMath.ToString());
             listSummary.Items.Add(item2);
+
+
+
             //最高分跟最低分，使用前面得到的list，進行比大小得到最高分跟最低分
-            
-            
 
-
-          int maxChi = gradesChi.Max();
+            int maxChi = gradesChi.Max();
             int maxEng = gradesEng.Max();
             int maxMath = gradesMath.Max();
 
@@ -226,7 +252,7 @@ namespace HW_FRM
             int minEng = gradesEng.Min();
             int minChi = gradesChi.Min();
 
-            ListViewItem item3= new ListViewItem();
+            ListViewItem item3 = new ListViewItem();
             item3.SubItems[0].Text = "最高分";
             item3.SubItems.Add(maxChi.ToString());
             item3.SubItems.Add(maxEng.ToString());

@@ -37,7 +37,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtAnswer = new System.Windows.Forms.TextBox();
-            this.btnMinus = new System.Windows.Forms.Button();
+            this.btnMultiply = new System.Windows.Forms.Button();
             this.btnTimes = new System.Windows.Forms.Button();
             this.btnDivided = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -127,14 +127,14 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.Font = new System.Drawing.Font("新細明體", 12F);
-            this.btnMinus.Location = new System.Drawing.Point(403, 150);
-            this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(75, 43);
-            this.btnMinus.TabIndex = 9;
-            this.btnMinus.Text = "-";
-            this.btnMinus.UseVisualStyleBackColor = true;
-            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
+            this.btnMultiply.Font = new System.Drawing.Font("新細明體", 12F);
+            this.btnMultiply.Location = new System.Drawing.Point(403, 150);
+            this.btnMultiply.Name = "btnMinus";
+            this.btnMultiply.Size = new System.Drawing.Size(75, 43);
+            this.btnMultiply.TabIndex = 9;
+            this.btnMultiply.Text = "-";
+            this.btnMultiply.UseVisualStyleBackColor = true;
+            this.btnMultiply.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // btnTimes
             // 
@@ -145,7 +145,7 @@
             this.btnTimes.TabIndex = 10;
             this.btnTimes.Text = "*";
             this.btnTimes.UseVisualStyleBackColor = true;
-            this.btnTimes.Click += new System.EventHandler(this.btnTimes_Click);
+            this.btnTimes.Click += new System.EventHandler(this.btnMutiply);
             // 
             // btnDivided
             // 
@@ -165,7 +165,7 @@
             this.ClientSize = new System.Drawing.Size(616, 450);
             this.Controls.Add(this.btnDivided);
             this.Controls.Add(this.btnTimes);
-            this.Controls.Add(this.btnMinus);
+            this.Controls.Add(this.btnMultiply);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -193,7 +193,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtAnswer;
-        private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnMultiply;
         private System.Windows.Forms.Button btnTimes;
         private System.Windows.Forms.Button btnDivided;
     }

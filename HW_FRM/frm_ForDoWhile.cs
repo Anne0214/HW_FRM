@@ -51,7 +51,7 @@ namespace HW_FRM
 
         }
 
-        private void btwXmas_Click(object sender, EventArgs e)
+        private void btnXmas_Click(object sender, EventArgs e)
         {
             labResult.Text = "";
             int row;
@@ -99,22 +99,20 @@ namespace HW_FRM
 
         private void btnFor_Click(object sender, EventArgs e)
         {
-            int from;
+            int from,to,step;
             bool a = int.TryParse(txtFrom.Text, out from);
-            int to;
             bool b = int.TryParse(txtTo.Text, out to);
-            int step;
             bool c = int.TryParse(txtStep.Text,out step);
             int sum = 0;
 
             if (a==false| b==false| c==false)
             {
-                MessageBox.Show("Step不可輸入0");
+                MessageBox.Show("請輸入正整數");
             }
             else if (step == 0)
             {
 
-                MessageBox.Show("Step不可輸入0");
+                MessageBox.Show("Step不可為0");
             }
             else
             {
@@ -131,17 +129,15 @@ namespace HW_FRM
 
         private void btnWhile_Click(object sender, EventArgs e)
         {
-            int from;
+            int from, to, step;
             bool a = int.TryParse(txtFrom.Text, out from);
-            int to;
             bool b = int.TryParse(txtTo.Text, out to);
-            int step;
             bool c = int.TryParse(txtStep.Text, out step);
             int sum = 0;
 
             if (a == false | b == false | c == false)
             {
-                MessageBox.Show("Step不可輸入0");
+                MessageBox.Show("請輸入正整數");
             }
             else if (step == 0)
             {
@@ -166,17 +162,15 @@ namespace HW_FRM
         private void btnDo_Click(object sender, EventArgs e)
         {
             //要用do-while，會確保執行至少一次，且在尾部檢查條件
-            int from;
+            int from, to, step;
             bool a = int.TryParse(txtFrom.Text, out from);
-            int to;
             bool b = int.TryParse(txtTo.Text, out to);
-            int step;
             bool c = int.TryParse(txtStep.Text, out step);
             int sum = 0;
 
             if (a == false | b == false | c == false)
             {
-                MessageBox.Show("請輸入整數");
+                MessageBox.Show("請輸入正整數");
             }
             else if (step==0){
 

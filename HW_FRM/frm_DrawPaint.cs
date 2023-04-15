@@ -22,8 +22,8 @@ namespace HW_FRM
             pen = new Pen(Color.Black, 1); //初始畫筆
         }
 
-        bool isMouseDown=false;
-        List<Point> points = new List<Point>();
+        bool isMouseDown=false; //紀錄游標長按與否的狀況
+        List<Point> points = new List<Point>(); //紀錄游標點擊放開的位置
 
         
 
@@ -45,34 +45,43 @@ namespace HW_FRM
         }
 
         private void frm_DrawPaint_MouseDown(object sender, MouseEventArgs e)
-        {
-            points.Add(new Point(e.X,e.Y)); //紀錄點下的位置
-            isMouseDown = true; //變成true
-
+        {//當點擊時
+            try
+            {
+                points.Add(new Point(e.X, e.Y)); //紀錄點擊的位置
+                isMouseDown = true; //變成true
+            }
+            catch (Exception) { MessageBox.Show("發生不明錯誤(･8･)請稍後再試"); }
         }
 
         private void frm_DrawPaint_MouseMove(object sender, MouseEventArgs e)
-        {
-            
-            points.Add(new Point(e.X,e.Y) ); //todo 可以用e.Location來寫嗎
-            if (isMouseDown)//當有前面的游標點擊時就可以開始畫線
+        {//當游標移動時
+            try
             {
-                g.DrawLine(pen, points[points.Count - 2], points[points.Count - 1]); //用pen在g上畫圖，當游標移動且確實有前面點擊時，就會開始畫線，從上次點擊位置(或是游標經過的位置，畫到游標當前移動的位置)
+                points.Add(new Point(e.X, e.Y));  //新增一個當前位置
+                if (isMouseDown)//當有之前發生過游標點擊時，就可以開始畫線
+                {//從上次點擊位置(或是游標上個經過的位置)，畫到游標當前位置)
+                    g.DrawLine(pen, points[points.Count - 2], points[points.Count - 1]);
+                }
             }
+            catch (Exception) { MessageBox.Show("發生不明錯誤(･8･)請稍後再試"); }
 
-            
 
         }
 
         private void frm_DrawPaint_MouseUp(object sender, MouseEventArgs e)//點擊後放開游標會觸發的事件
-        {
-            if (isMouseDown)
+        {//當游標放開時
+            try
             {
-                points.Add(new Point(e.X, e.Y));
-                g.DrawLine(pen, points[points.Count-2], points[points.Count - 1]); //最後一個點是放開的位置，意思是從上次移動位置畫到這次放開的位置
-            }
+                if (isMouseDown)
+                { //如果是前面發生過點擊游標
+                    points.Add(new Point(e.X, e.Y)); //新增當前位置
+                    g.DrawLine(pen, points[points.Count - 2], points[points.Count - 1]); //最後一個點是放開的位置，意思是從上次移動位置畫到這次放開的位置
+                }
 
-            isMouseDown = false;
+                isMouseDown = false; //改為放開，就不會再畫了
+            }
+            catch (Exception) { MessageBox.Show("發生不明錯誤(･8･)請稍後再試"); }
         }
     }
 }

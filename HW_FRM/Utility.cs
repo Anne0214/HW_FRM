@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace HW_FRM
 {
-    public class calc_loan //給Loan用的
+    public class CalcLoan //給Loan用的
     {
-        public double monthlyRate(double rate, double term) //回傳月利率
+        public double MonthlyRate(double rate, double term) //回傳月利率
         { //term單位年，rate為年利率，有小數點
             double numerator = Math.Pow(1 + rate / 12, term * 12);
             numerator = numerator * (rate / 12);
@@ -23,23 +23,23 @@ namespace HW_FRM
         }
         public double PMT(double loan, double rate, double downPayment, double term) //回傳每月付的金額
         {
-            double mRate = monthlyRate(rate, term);
+            double mRate = MonthlyRate(rate, term);
             return (loan - downPayment) * mRate;
         }
-        public double totalPay(double loan, double rate, double downPayment, double term) //回傳總共付的金額
+        public double TotalPay(double loan, double rate, double downPayment, double term) //回傳總共付的金額
         {//todo可能有錯
-            double mRate = monthlyRate(rate, term);
+            double mRate = MonthlyRate(rate, term);
             double calc = PMT(loan, rate, downPayment, term);
             calc = calc * term * 12;
             return calc;
         }
     }
-    public class commodity
+    public class Commodity
     {
         public int price;
         public string name;
         public int count;
-        public commodity(int price, string name, int count)
+        public Commodity(int price, string name, int count)
         {
             this.price = price;
             this.name = name;

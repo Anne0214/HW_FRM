@@ -18,8 +18,8 @@ namespace HW_FRM
         }
 
         void ShowDetail(System.Windows.Forms.PictureBox box)
-        {
-            frm_PictureViewer2 frm2 = new frm_PictureViewer2((System.Drawing.Bitmap)box.Image);
+        { //秀大圖的視窗由frm_PictureViewer2實作
+            frm_PictureViewer2 frm2 = new frm_PictureViewer2((System.Drawing.Bitmap)box.Image); //用同名方法傳送要放大圖的圖片
             frm2.Show();
         }
 

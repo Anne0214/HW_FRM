@@ -173,7 +173,7 @@
             this.btwXmas.TabIndex = 12;
             this.btwXmas.Text = "直角聖誕樹";
             this.btwXmas.UseVisualStyleBackColor = true;
-            this.btwXmas.Click += new System.EventHandler(this.btwXmas_Click);
+            this.btwXmas.Click += new System.EventHandler(this.btnXmas_Click);
             // 
             // btnLottery
             // 

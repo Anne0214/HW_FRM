@@ -19,33 +19,70 @@ namespace HW_FRM
         {
             InitializeComponent();
         }
-        Student stupid= new Student();
+        Student student= new Student(); //只有一個學生，此處new一個實體
         private void btnSave_Click(object sender, EventArgs e)
         {
             try
             {
-                stupid.Name = txtName.Text;
-                stupid.scoreChi = int.Parse(txtChi.Text);
-                stupid.scoreMath = int.Parse(txtMath.Text);
-                stupid.scoreEng = int.Parse(txtEng.Text);
+                string name = txtName.Text;
+                int chi, math, eng;
+                bool is_int_chi = int.TryParse(txtChi.Text, out chi);
+                bool is_int_math = int.TryParse(txtMath.Text, out math);
+                bool is_int_eng = int.TryParse(txtEng.Text, out eng);
+                
+
+                if (name == "")
+                {
+                    MessageBox.Show("請輸入學生名稱喔(ノ▼Д▼)ノ");
+                }
+                else
+                {
+                    if (is_int_chi == false)
+                    {
+                        MessageBox.Show("請輸入正確的國文成績(ノ▼Д▼)ノ");
+                    }
+                    else
+                    {
+                        if (is_int_eng == false)
+                        {
+                            MessageBox.Show("請輸入正確的英文成績(ノ▼Д▼)ノ");
+                        }
+                        else
+                        {
+                            if (is_int_math == false)
+                            {
+                                MessageBox.Show("請輸入正確的數學成績(ノ▼Д▼)ノ");
+                            }
+                            else
+                            {
+                                student.Name = name;
+                                student.scoreChi = chi;
+                                student.scoreEng = eng;
+                                student.scoreMath = math;
+                            }
+                            
+                        }
+                    }
+
+                }
             }
-            catch (FormatException)
+            catch (Exception)
             {
-                MessageBox.Show("請輸入正確格式的資料");
+                MessageBox.Show("發生不明錯誤，請稍後再試");
             }
     }
 
         private void btnDisplay_Click(object sender, EventArgs e)
         {
-            txtDisplay.Text
-            = string.Format("姓名：{0}\n國文：{1}\n數學：{2}\n英文：{3}", stupid.Name, stupid.scoreChi, stupid.scoreMath, stupid.scoreEng); //todo媽的一直換不了行
-
+            
+            txtDisplay.Text = $"姓名：{student.Name}{Environment.NewLine}國文：{student.scoreChi}{Environment.NewLine}數學：{student.scoreMath}{Environment.NewLine}英文：{student.scoreEng}";
+            //不知道為甚麼這樣寫才能換行，昏惹
         }
 
         private void btnSpecial_Click(object sender, EventArgs e)
         {
-            int[] array = new int[] { stupid.scoreChi, stupid.scoreMath, stupid.scoreEng };
-            txtSpecial.Text = String.Format("最高分科目成績為:{0}\n最低分科目成績為:{1}", array.Max(),array.Min()); //todo 不能換行要再調整
+            int[] array = new int[] { student.scoreChi, student.scoreMath, student.scoreEng };
+            txtSpecial.Text = $"最高分科目成績為:{array.Max()}{Environment.NewLine}最低分科目成績為:{array.Min()}"; 
         }
     }
 }

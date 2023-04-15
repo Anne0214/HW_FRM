@@ -12,12 +12,9 @@ namespace HW_FRM
 {
     public partial class frm_PictureViewer2 : Form
     {
-        public frm_PictureViewer2()
-        {
-            InitializeComponent();
-        }
+        
         public frm_PictureViewer2(System.Drawing.Bitmap picture)
-        {
+        { 
             InitializeComponent();
             this.pictureBox1.Image =picture;
         }

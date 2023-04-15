@@ -18,7 +18,7 @@ namespace HW_FRM
         }
         int j = 0; //用來紀錄現在下到第幾個，判斷是O還是X
 
-        void ReStart()
+        void ReStart() //遊戲開始/重開用的方法
         {
             j = 0;
             //清空原本的符號
@@ -46,61 +46,56 @@ namespace HW_FRM
         }
 
         
-        void Step(System.Windows.Forms.Button name)
+        void Step(System.Windows.Forms.Button button)
         {
-            //點擊按鈕後該按鈕會呈現圈或差
-            j++;
-            if( j % 2 ==0 )
-            {
-                name.Text = "O";
-                name.Enabled = false;
-                //要讓按鈕被鎖定不能更改
-            }
-            else
-            {
-                name.Text = "X";
-                name.Enabled = false;
-                //要讓按鈕鎖定不能更改
-            }
+            try
+            { //點擊按鈕後1.按鈕變圈或叉 2. 按鈕鎖定不可再按
+                j++;
+                button.Text = (j % 2 == 0) ? "O" : "X";
+                button.Enabled = false;
 
-            
 
-            //當局數>=6，開始進行勝負的判斷，判斷為或橫或直或斜的按鈕為同一個符號，增加效率，就不用每次跑這麼大坨
-            if (j >= 5)
-            { 
-                bool victory = (
-                //橫的三行同符號
-                (btn1.Text == btn2.Text & btn1.Text == btn3.Text & btn3.Text == btn2.Text & btn1.Text != "" & btn2.Text != "" & btn3.Text!="") |
-                (btn4.Text == btn5.Text & btn4.Text == btn6.Text & btn5.Text == btn6.Text & btn4.Text != "" & btn5.Text != "" & btn6.Text != "") |
-                (btn7.Text == btn8.Text & btn7.Text == btn9.Text & btn8.Text == btn9.Text & btn7.Text != "" & btn8.Text != "" & btn9.Text != "") |
-                //直的三行同符號
-                (btn1.Text == btn4.Text & btn1.Text == btn7.Text & btn4.Text == btn7.Text & btn1.Text != "" & btn4.Text != "" & btn7.Text != "") |
-                (btn2.Text == btn5.Text & btn2.Text == btn8.Text & btn8.Text == btn5.Text & btn2.Text != "" & btn5.Text != "" & btn8.Text != "") |
-                (btn3.Text == btn6.Text & btn3.Text == btn9.Text & btn6.Text == btn9.Text & btn3.Text != "" & btn6.Text != "" & btn9.Text != "") |
-                //斜的兩行同符號
-                (btn1.Text == btn5.Text & btn1.Text == btn9.Text & btn5.Text == btn9.Text & btn1.Text != "" & btn5.Text != "" & btn9.Text != "") |
-                (btn3.Text == btn5.Text & btn3.Text == btn7.Text & btn5.Text == btn7.Text & btn3.Text != "" & btn5.Text != "" & btn7.Text != ""));
-                switch (victory)
+
+                //當局數>=6，開始進行勝負的判斷，判斷為或橫或直或斜的按鈕為同一個符號，增加效率，就不用每次跑這麼大坨
+                if (j >= 5)
                 {
-                    case true:
-                        MessageBox.Show(name.Text + "手獲勝!");
-                        ReStart();
-                        break;
-                    case false://當無人獲勝時，判斷是否全場的按鈕都有符號，有則跳彈窗顯示平手
-                        if (btn1.Text != "" & btn2.Text != "" & btn3.Text != "" & btn4.Text != "" & btn5.Text != "" & btn6.Text != "" & btn7.Text != "" & btn8.Text != "" & btn9.Text != "")
-                        {
-                            MessageBox.Show("平手! 按下確定重新開始");
+                    bool victory = (
+                    //橫的三行同符號
+                    (btn1.Text == btn2.Text & btn1.Text == btn3.Text & btn3.Text == btn2.Text & btn1.Text != "" & btn2.Text != "" & btn3.Text != "") |
+                    (btn4.Text == btn5.Text & btn4.Text == btn6.Text & btn5.Text == btn6.Text & btn4.Text != "" & btn5.Text != "" & btn6.Text != "") |
+                    (btn7.Text == btn8.Text & btn7.Text == btn9.Text & btn8.Text == btn9.Text & btn7.Text != "" & btn8.Text != "" & btn9.Text != "") |
+                    //直的三行同符號
+                    (btn1.Text == btn4.Text & btn1.Text == btn7.Text & btn4.Text == btn7.Text & btn1.Text != "" & btn4.Text != "" & btn7.Text != "") |
+                    (btn2.Text == btn5.Text & btn2.Text == btn8.Text & btn8.Text == btn5.Text & btn2.Text != "" & btn5.Text != "" & btn8.Text != "") |
+                    (btn3.Text == btn6.Text & btn3.Text == btn9.Text & btn6.Text == btn9.Text & btn3.Text != "" & btn6.Text != "" & btn9.Text != "") |
+                    //斜的兩行同符號
+                    (btn1.Text == btn5.Text & btn1.Text == btn9.Text & btn5.Text == btn9.Text & btn1.Text != "" & btn5.Text != "" & btn9.Text != "") |
+                    (btn3.Text == btn5.Text & btn3.Text == btn7.Text & btn5.Text == btn7.Text & btn3.Text != "" & btn5.Text != "" & btn7.Text != ""));
+                    switch (victory)
+                    {
+                        case true:
+                            MessageBox.Show(button.Text + "手獲勝!");
                             ReStart();
-                        }
+                            break;
+                        case false://當無人獲勝時，判斷是否全場的按鈕都有符號，有則跳彈窗顯示平手
+                            if (btn1.Text != "" & btn2.Text != "" & btn3.Text != "" & btn4.Text != "" & btn5.Text != "" & btn6.Text != "" & btn7.Text != "" & btn8.Text != "" & btn9.Text != "")
+                            {
+                                MessageBox.Show("平手! 按下確定重新開始");
+                                ReStart();
+                            }
 
 
-                        break;
+                            break;
+
+                    }
 
                 }
 
             }
-            
-            
+            catch (Exception) { 
+                MessageBox.Show("發生不明錯誤> < 遊戲即將重開");
+                ReStart();
+            }
            
 
         }

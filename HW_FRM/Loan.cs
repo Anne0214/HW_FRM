@@ -18,17 +18,28 @@ namespace HW_FRM
 
         }
 
+        public void GetData(out double downPayment,out double rate,out double term, out double loan)
+        { //需要取得用戶輸入的資料時用的方法
+            downPayment = Convert.ToDouble(txtDownPayment.Text);
+            rate = Convert.ToDouble(txtRate.Text);
+            rate = rate * 0.01;
+            term = Convert.ToDouble(txtTerm.Text);
+            loan = Convert.ToDouble(txtLoan.Text);
+        }
+
         private void btnPMT_Click(object sender, EventArgs e)
         {
             try
             {
-                double downPayment = Convert.ToDouble(txtDownPayment.Text);
-                double rate = Convert.ToDouble(txtRate.Text);
-                rate = rate * 0.01;
-                double term = Convert.ToDouble(txtTerm.Text);
-                double loan = Convert.ToDouble(txtLoan.Text);
+                //取得用戶輸入的數值
+                double downPayment;
+                double rate;
+                double term;
+                double loan;
+                GetData(out downPayment,out rate,out term,out loan);
 
-                calc_loan calcLoan = new calc_loan();
+                //進行計算
+                CalcLoan calcLoan = new CalcLoan();
 
                 double PMT = calcLoan.PMT(loan, rate, downPayment, term);
                 PMT = Math.Round(PMT);
@@ -36,21 +47,23 @@ namespace HW_FRM
 
             }
             catch (FormatException) { MessageBox.Show("請輸入正確格式的數字"); }
-
+            catch  (Exception) { MessageBox.Show("發生不明錯誤>< 暫時無法使用"); }
         }
 
         private void btnTotal_Click(object sender, EventArgs e)
         {
             try
-            {
-                double downPayment = Convert.ToDouble(txtDownPayment.Text);
-                double rate = Convert.ToDouble(txtRate.Text);
-                rate = rate * 0.01;
-                double term = Convert.ToDouble(txtTerm.Text);
-                double loan = Convert.ToDouble(txtLoan.Text);
+            { //取得用戶輸入的數值
+                double downPayment;
+                double rate;
+                double term;
+                double loan;
+                GetData(out downPayment, out rate, out term, out loan);
 
-                calc_loan calcLoan = new calc_loan();
-                double result = calcLoan.totalPay(loan, rate, downPayment, term);
+                //進行計算
+
+                CalcLoan calcLoan = new CalcLoan();
+                double result = calcLoan.TotalPay(loan, rate, downPayment, term);
                 result = Math.Round(result);
                 MessageBox.Show("總付款:" + result + "元");
 
@@ -59,25 +72,34 @@ namespace HW_FRM
             {
                 MessageBox.Show("請輸入正確格式的數字");
             }
+            catch (Exception)
+            {
+                MessageBox.Show("發生不明錯誤>< 暫時無法使用");
+            }
         }
 
         private void btnReport_Click(object sender, EventArgs e)
         {
             try
             {
-                double downPayment = Convert.ToDouble(txtDownPayment.Text);
-                double rate = Convert.ToDouble(txtRate.Text);
-                rate = rate * 0.01;
-                double term = Convert.ToDouble(txtTerm.Text);
-                double loan = Convert.ToDouble(txtLoan.Text);
+                //取得用戶輸入的數值
+                double downPayment;
+                double rate;
+                double term;
+                double loan;
+                GetData(out downPayment, out rate, out term, out loan);
 
-                calc_loan calcLoan = new calc_loan();
-                double total = calcLoan.totalPay(loan, rate, downPayment, term);
+
+                //進行計算
+                CalcLoan calcLoan = new CalcLoan();
+                double total = calcLoan.TotalPay(loan, rate, downPayment, term);
                 total = Math.Round(total);
 
                 double PMT = calcLoan.PMT(loan, rate, downPayment, term);
                 PMT = Math.Round(PMT);
 
+
+                //使用另一個視窗來展示數據
                 loan_report repo = new loan_report();
                 repo._txtLoan.Text = txtLoan.Text;
                 repo._txtTerm.Text = txtTerm.Text;
@@ -90,6 +112,10 @@ namespace HW_FRM
             catch (FormatException)
             {
                 MessageBox.Show("請輸入正確格式的數字");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("發生不明錯誤>< 暫時無法使用");
             }
         }
     }
