@@ -23,7 +23,7 @@ namespace HW_FRM
 
 
         private void timer1_Tick(object sender, EventArgs e)
-        {
+        { 
             labNow.Text = DateTime.Now.ToString("HH:mm:ss");  //顯示當前時間
 
             //判斷是否到達已設定鬧鐘的時間
@@ -36,13 +36,23 @@ namespace HW_FRM
                     {//與設定的鬧鐘分鐘相同
                         if (alarmObject.Second == DateTime.Now.Second)
                         {//與設定的鬧鐘秒數相同，則當作已到達時間
-                            switchBox.Checked = false;
-                            System.Media.SoundPlayer sp = new SoundPlayer();
-                            sp.SoundLocation = @"..\13463.WAV";
-                            sp.Play();
-                            MessageBox.Show("到時間了");
-                            txtAlarm.Enabled = true;
-                            txtAlarm.Text = "時:分:秒";
+                            try
+                            {
+                                switchBox.Checked = false;
+                                System.Media.SoundPlayer sp = new SoundPlayer();
+                                sp.SoundLocation = @"13463.WAV";
+                                sp.Play();
+                            }
+                            catch (Exception)
+                            {
+                                //如果音檔處有任何問題，不要跳出錯誤彈窗
+                            }
+                            finally
+                            {
+                                MessageBox.Show("到時間了");
+                                txtAlarm.Enabled = true;
+                                txtAlarm.Text = "時:分:秒";
+                            }
                         }
 
                     }
@@ -106,6 +116,11 @@ namespace HW_FRM
         private void frm_Alarm_Load(object sender, EventArgs e)
         { //當視窗在Load時左上角就要開始顯示當前時間了
             labNow.Text = DateTime.Now.ToString("HH:mm:ss");
+        }
+
+        private void txtAlarm_Click(object sender, EventArgs e)
+        { //點擊輸入框文字清空，方便使用
+            txtAlarm.Text = "";
         }
     }
 }

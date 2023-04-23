@@ -17,43 +17,15 @@ namespace HW_FRM
             InitializeComponent();
         }
 
-        void ShowDetail(System.Windows.Forms.PictureBox box)
-        { //秀大圖的視窗由frm_PictureViewer2實作
-            frm_PictureViewer2 frm2 = new frm_PictureViewer2((System.Drawing.Bitmap)box.Image); //用同名方法傳送要放大圖的圖片
+
+
+        private void pictureBox_Click(object sender, EventArgs e)
+        { //每個圖片的點擊事件
+            //由frm_PictureViewer2來作為放大的視窗
+            frm_PictureViewer2 frm2 = new frm_PictureViewer2((System.Drawing.Bitmap)((System.Windows.Forms.PictureBox)sender).Image); 
             frm2.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox1);
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox2);
-        }
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox3);
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox4);
-        }
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox5);
-        }
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox6);
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-            ShowDetail(pictureBox7);
-        }
-
+        
     }
 }

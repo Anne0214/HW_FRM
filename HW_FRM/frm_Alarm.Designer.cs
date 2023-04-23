@@ -56,9 +56,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("新細明體", 12F);
             this.groupBox1.Location = new System.Drawing.Point(60, 153);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(402, 210);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -68,7 +68,7 @@
             // 
             this.switchBox.AutoSize = true;
             this.switchBox.Location = new System.Drawing.Point(201, 146);
-            this.switchBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.switchBox.Margin = new System.Windows.Forms.Padding(4);
             this.switchBox.Name = "switchBox";
             this.switchBox.Size = new System.Drawing.Size(156, 28);
             this.switchBox.TabIndex = 2;
@@ -79,11 +79,12 @@
             // txtAlarm
             // 
             this.txtAlarm.Location = new System.Drawing.Point(146, 64);
-            this.txtAlarm.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAlarm.Margin = new System.Windows.Forms.Padding(4);
             this.txtAlarm.Name = "txtAlarm";
             this.txtAlarm.Size = new System.Drawing.Size(199, 36);
             this.txtAlarm.TabIndex = 1;
             this.txtAlarm.Text = "時:分:秒";
+            this.txtAlarm.Click += new System.EventHandler(this.txtAlarm_Click);
             // 
             // label2
             // 
@@ -107,7 +108,7 @@
             this.ClientSize = new System.Drawing.Size(656, 436);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.labNow);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_Alarm";
             this.Text = "frm_Alarm";
             this.Load += new System.EventHandler(this.frm_Alarm_Load);

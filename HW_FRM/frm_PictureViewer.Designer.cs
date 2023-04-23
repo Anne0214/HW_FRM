@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Principal;
 
 namespace HW_FRM
 {
@@ -63,6 +64,10 @@ namespace HW_FRM
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1204, 680);
             this.flowLayoutPanel1.TabIndex = 0;
+            foreach(System.Windows.Forms.PictureBox b in this.flowLayoutPanel1.Controls)
+            { //為每顆按鈕加上事件
+                b.Click += new EventHandler(pictureBox_Click);
+            }
             // 
             // pictureBox1
             // 
@@ -75,7 +80,7 @@ namespace HW_FRM
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            
             // 
             // pictureBox2
             // 
@@ -88,7 +93,7 @@ namespace HW_FRM
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
-            pictureBox2.Click += new EventHandler(pictureBox2_Click);
+            
             // 
             // pictureBox3
             // 
@@ -101,7 +106,7 @@ namespace HW_FRM
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
-            pictureBox3.Click+= new EventHandler(pictureBox3_Click);
+           
             // 
             // pictureBox4
             // 
@@ -114,7 +119,7 @@ namespace HW_FRM
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 3;
             this.pictureBox4.TabStop = false;
-            pictureBox4.Click +=new EventHandler(pictureBox4_Click);
+           
             // 
             // pictureBox5
             // 
@@ -127,7 +132,7 @@ namespace HW_FRM
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
-            pictureBox5.Click += new EventHandler(pictureBox5_Click);
+           
             // 
             // pictureBox6
             // 
@@ -140,7 +145,7 @@ namespace HW_FRM
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 5;
             this.pictureBox6.TabStop = false;
-            pictureBox6.Click += new EventHandler(pictureBox6_Click);
+            
             // 
             // pictureBox7
             // 
@@ -153,7 +158,7 @@ namespace HW_FRM
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 6;
             this.pictureBox7.TabStop = false;
-            pictureBox7.Click += new EventHandler(pictureBox7_Click);
+         
             // 
             // frm_PictureViewer
             // 

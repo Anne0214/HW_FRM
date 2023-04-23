@@ -21,27 +21,14 @@ namespace HW_FRM
         void ReStart() //遊戲開始/重開用的方法
         {
             j = 0;
-            //清空原本的符號
-            btn1.Text = "";
-            btn2.Text = "";
-            btn3.Text = "";
-            btn4.Text = "";
-            btn5.Text = "";
-            btn6.Text = "";
-            btn7.Text = "";
-            btn8.Text = "";
-            btn9.Text = "";
+            foreach (System.Windows.Forms.Button b in flowLayoutPanel1.Controls)
+            {
+                //清空原本的符號
+                b.Text = "";
 
-            //使按鈕可按
-            btn1.Enabled = true;
-            btn2.Enabled = true;   
-            btn3.Enabled = true;
-            btn4.Enabled = true;
-            btn5.Enabled = true;
-            btn6.Enabled = true;
-            btn7.Enabled = true;
-            btn8.Enabled = true;
-            btn9.Enabled = true;
+                //使按鈕可按
+                b.Enabled = true;
+            }
 
         }
 
@@ -100,51 +87,13 @@ namespace HW_FRM
 
         }
 
-        private void btn1_Click(object sender, EventArgs e) //改寫看看，看能不能用一個event解決
+        private void btn_Click(object sender, EventArgs e) //改寫看看，看能不能用一個event解決
         {
             
-            Step(btn2);
+            Step((System.Windows.Forms.Button)sender);
         }
 
-        private void btn2_Click(object sender, EventArgs e)
-        {
-            Step(btn2);
-        }
-
-        private void btn3_Click(object sender, EventArgs e)
-        {
-            Step(btn3);
-        }
-
-        private void btn4_Click(object sender, EventArgs e)
-        {
-            Step(btn4);
-        }
-
-        private void btn5_Click(object sender, EventArgs e)
-        {
-            Step(btn5);
-        }
-
-        private void btn6_Click(object sender, EventArgs e)
-        {
-            Step(btn6);
-        }
-
-        private void btn7_Click(object sender, EventArgs e)
-        {
-            Step(btn7);
-        }
-
-        private void btn8_Click(object sender, EventArgs e)
-        {
-            Step(btn8);
-        }
-
-        private void btn9_Click(object sender, EventArgs e)
-        {
-            Step(btn9);
-        }
+        
 
         private void btnReset_Click(object sender, EventArgs e)
         {
