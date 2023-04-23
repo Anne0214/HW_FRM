@@ -247,6 +247,8 @@ namespace HW_FRM
             main.Parent = this.splitContainer1.Panel2;
             main.Show();
         }
+
+        
     }
-    }
+}
 
